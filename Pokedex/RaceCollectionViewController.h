@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "PokedexModel.h"
 #import "Type.h"
+#import "Generation.h"
 
 @interface RaceCollectionViewController : UICollectionViewController
 @property (nonatomic, strong) Type *type;
+@property (nonatomic, strong) Generation *gen;
 @end

@@ -11,4 +11,5 @@
 @interface PokedexModel : NSObject
 @property (nonatomic, strong) NSArray* races;
 @property (nonatomic, strong) NSArray* types;
+@property (nonatomic, strong) NSArray* generations;
 @end

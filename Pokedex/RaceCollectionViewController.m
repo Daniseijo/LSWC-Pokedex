@@ -26,8 +26,10 @@
     
     // Ordenamos los pokemons
     NSSortDescriptor *sort = [NSSortDescriptor sortDescriptorWithKey:@"code" ascending:YES];
-    self.racesSorted = [self.type.races sortedArrayUsingDescriptors:[NSArray
-                                                                     arrayWithObject:sort]];
+    if (self.type)
+        self.racesSorted = [self.type.races sortedArrayUsingDescriptors:[NSArray arrayWithObject:sort]];
+    else if (self.gen)
+        self.racesSorted = [self.gen.races sortedArrayUsingDescriptors:[NSArray arrayWithObject:sort]];
 }
 
 - (void)didReceiveMemoryWarning
@@ -43,7 +45,7 @@
 }
 
 - (NSInteger) collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return [self.type.races count];
+    return [self.racesSorted count];
 }
 
 - (UICollectionViewCell *) collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {

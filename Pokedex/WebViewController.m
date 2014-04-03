@@ -10,7 +10,7 @@
 
 @interface WebViewController ()
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
-
+@property (nonatomic, strong) NSURL *url;
 @end
 
 @implementation WebViewController
@@ -22,8 +22,8 @@
     self.title = self.webTitle;
     
     self.str = [self.str stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    NSURL *url = [NSURL URLWithString:self.str];
-    NSURLRequest *req = [NSURLRequest requestWithURL:url];
+    self.url = [NSURL URLWithString:self.str];
+    NSURLRequest *req = [NSURLRequest requestWithURL:self.url];
     [self.webView loadRequest:req];
 }
 
@@ -31,6 +31,14 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)share:(UIBarButtonItem *)sender {
+    
+    NSArray *objectsToShare = @[self.url];
+    UIActivityViewController *controller = [[UIActivityViewController alloc] initWithActivityItems:objectsToShare applicationActivities:nil];
+    
+    // Presentando el controlador
+    [self presentViewController:controller animated:YES completion:nil];
 }
 
 @end

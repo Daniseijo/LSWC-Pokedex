@@ -279,6 +279,8 @@
 		5E89A97818ED99E10055E143 /* RaceCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E89A97718ED99E10055E143 /* RaceCollectionViewController.m */; };
 		5E89A97B18ED9B380055E143 /* PokemonCVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E89A97A18ED9B380055E143 /* PokemonCVCell.m */; };
 		5E89A97E18EDA9150055E143 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E89A97D18EDA9150055E143 /* WebViewController.m */; };
+		5E89A98118EDC2B00055E143 /* GenerationsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E89A98018EDC2B00055E143 /* GenerationsTableViewController.m */; };
+		5E89A98418EDCEAF0055E143 /* Generation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E89A98318EDCEAF0055E143 /* Generation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -575,6 +577,10 @@
 		5E89A97A18ED9B380055E143 /* PokemonCVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PokemonCVCell.m; sourceTree = "<group>"; };
 		5E89A97C18EDA9150055E143 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		5E89A97D18EDA9150055E143 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		5E89A97F18EDC2B00055E143 /* GenerationsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenerationsTableViewController.h; sourceTree = "<group>"; };
+		5E89A98018EDC2B00055E143 /* GenerationsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenerationsTableViewController.m; sourceTree = "<group>"; };
+		5E89A98218EDCEAF0055E143 /* Generation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Generation.h; path = Model/Generation.h; sourceTree = "<group>"; };
+		5E89A98318EDCEAF0055E143 /* Generation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Generation.m; path = Model/Generation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -638,6 +644,8 @@
 				5E02C5D318ED69DC0049AD84 /* PokedexAppDelegate.h */,
 				5E02C5D418ED69DC0049AD84 /* PokedexAppDelegate.m */,
 				5E02C5D618ED69DC0049AD84 /* Main.storyboard */,
+				5E89A97F18EDC2B00055E143 /* GenerationsTableViewController.h */,
+				5E89A98018EDC2B00055E143 /* GenerationsTableViewController.m */,
 				5E89A97C18EDA9150055E143 /* WebViewController.h */,
 				5E89A97D18EDA9150055E143 /* WebViewController.m */,
 				5E89A97918ED9B380055E143 /* PokemonCVCell.h */,
@@ -950,6 +958,8 @@
 				5E02C7F718ED709E0049AD84 /* Race.m */,
 				5E02C7F918ED70B70049AD84 /* Type.h */,
 				5E02C7FA18ED70B70049AD84 /* Type.m */,
+				5E89A98218EDCEAF0055E143 /* Generation.h */,
+				5E89A98318EDCEAF0055E143 /* Generation.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -1314,7 +1324,9 @@
 				5E89A97E18EDA9150055E143 /* WebViewController.m in Sources */,
 				5E89A97B18ED9B380055E143 /* PokemonCVCell.m in Sources */,
 				5E89A97818ED99E10055E143 /* RaceCollectionViewController.m in Sources */,
+				5E89A98418EDCEAF0055E143 /* Generation.m in Sources */,
 				5E02C7F418ED704C0049AD84 /* PokedexModel.m in Sources */,
+				5E89A98118EDC2B00055E143 /* GenerationsTableViewController.m in Sources */,
 				5E02C80018ED7A2B0049AD84 /* TypesTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
