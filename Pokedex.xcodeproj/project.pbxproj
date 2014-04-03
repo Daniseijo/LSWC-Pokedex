@@ -276,6 +276,9 @@
 		5E02C7FB18ED70B70049AD84 /* Type.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E02C7FA18ED70B70049AD84 /* Type.m */; };
 		5E02C7FD18ED74A30049AD84 /* pokemons.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5E02C7FC18ED74A30049AD84 /* pokemons.plist */; };
 		5E02C80018ED7A2B0049AD84 /* TypesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E02C7FF18ED7A2B0049AD84 /* TypesTableViewController.m */; };
+		5E89A97818ED99E10055E143 /* RaceCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E89A97718ED99E10055E143 /* RaceCollectionViewController.m */; };
+		5E89A97B18ED9B380055E143 /* PokemonCVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E89A97A18ED9B380055E143 /* PokemonCVCell.m */; };
+		5E89A97E18EDA9150055E143 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E89A97D18EDA9150055E143 /* WebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -566,6 +569,12 @@
 		5E02C7FC18ED74A30049AD84 /* pokemons.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = pokemons.plist; path = Model/pokemons.plist; sourceTree = "<group>"; };
 		5E02C7FE18ED7A2B0049AD84 /* TypesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypesTableViewController.h; sourceTree = "<group>"; };
 		5E02C7FF18ED7A2B0049AD84 /* TypesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypesTableViewController.m; sourceTree = "<group>"; };
+		5E89A97618ED99E10055E143 /* RaceCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RaceCollectionViewController.h; sourceTree = "<group>"; };
+		5E89A97718ED99E10055E143 /* RaceCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RaceCollectionViewController.m; sourceTree = "<group>"; };
+		5E89A97918ED9B380055E143 /* PokemonCVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PokemonCVCell.h; sourceTree = "<group>"; };
+		5E89A97A18ED9B380055E143 /* PokemonCVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PokemonCVCell.m; sourceTree = "<group>"; };
+		5E89A97C18EDA9150055E143 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		5E89A97D18EDA9150055E143 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -629,6 +638,12 @@
 				5E02C5D318ED69DC0049AD84 /* PokedexAppDelegate.h */,
 				5E02C5D418ED69DC0049AD84 /* PokedexAppDelegate.m */,
 				5E02C5D618ED69DC0049AD84 /* Main.storyboard */,
+				5E89A97C18EDA9150055E143 /* WebViewController.h */,
+				5E89A97D18EDA9150055E143 /* WebViewController.m */,
+				5E89A97918ED9B380055E143 /* PokemonCVCell.h */,
+				5E89A97A18ED9B380055E143 /* PokemonCVCell.m */,
+				5E89A97618ED99E10055E143 /* RaceCollectionViewController.h */,
+				5E89A97718ED99E10055E143 /* RaceCollectionViewController.m */,
 				5E02C7FE18ED7A2B0049AD84 /* TypesTableViewController.h */,
 				5E02C7FF18ED7A2B0049AD84 /* TypesTableViewController.m */,
 				5E02C5DC18ED69DC0049AD84 /* Images.xcassets */,
@@ -1296,6 +1311,9 @@
 				5E02C7FB18ED70B70049AD84 /* Type.m in Sources */,
 				5E02C5D118ED69DC0049AD84 /* main.m in Sources */,
 				5E02C5D518ED69DC0049AD84 /* PokedexAppDelegate.m in Sources */,
+				5E89A97E18EDA9150055E143 /* WebViewController.m in Sources */,
+				5E89A97B18ED9B380055E143 /* PokemonCVCell.m in Sources */,
+				5E89A97818ED99E10055E143 /* RaceCollectionViewController.m in Sources */,
 				5E02C7F418ED704C0049AD84 /* PokedexModel.m in Sources */,
 				5E02C80018ED7A2B0049AD84 /* TypesTableViewController.m in Sources */,
 			);

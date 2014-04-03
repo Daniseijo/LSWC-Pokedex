@@ -13,15 +13,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Type Cell" textLabel="3en-eK-b9o" style="IBUITableViewCellStyleDefault" id="pd2-u2-uR3">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="detailDisclosureButton" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Type Cell" textLabel="3en-eK-b9o" style="IBUITableViewCellStyleDefault" id="pd2-u2-uR3">
                                 <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pd2-u2-uR3" id="SXt-kf-0na">
-                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="253" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3en-eK-b9o">
-                                            <rect key="frame" x="15" y="0.0" width="270" height="43"/>
+                                            <rect key="frame" x="15" y="0.0" width="238" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -29,6 +29,10 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="m8T-pD-s5T" kind="push" identifier="Show Races" id="SPa-tD-V0B"/>
+                                    <segue destination="7Hp-2X-Nvf" kind="push" identifier="Show Type Web" trigger="accessoryAction" id="hSM-Qb-0dV"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -45,6 +49,95 @@
                 <customObject id="lTy-FA-PAl" customClass="PokedexModel"/>
             </objects>
             <point key="canvasLocation" x="233" y="-392"/>
+        </scene>
+        <!--Race Collection View Controller-->
+        <scene sceneID="By6-of-OEX">
+            <objects>
+                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="m8T-pD-s5T" customClass="RaceCollectionViewController" sceneMemberID="viewController">
+                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="6Hk-id-MQ0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="U8o-yV-Rpw">
+                            <size key="itemSize" width="93" height="84"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PokemonCell" id="dpl-xZ-bko" customClass="PokemonCVCell">
+                                <rect key="frame" x="0.0" y="64" width="93" height="84"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="93" height="84"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w7C-HT-unc">
+                                            <rect key="frame" x="0.0" y="63" width="93" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TQh-1T-sk9">
+                                            <rect key="frame" x="19" y="0.0" width="55" height="55"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <outlet property="iconImageView" destination="TQh-1T-sk9" id="cuS-2j-OFr"/>
+                                    <outlet property="nameLabel" destination="w7C-HT-unc" id="fhz-fY-KfD"/>
+                                    <segue destination="7Hp-2X-Nvf" kind="push" identifier="Show Pokemon Web" id="Rge-tS-HNE"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="m8T-pD-s5T" id="ofI-ew-OP6"/>
+                            <outlet property="delegate" destination="m8T-pD-s5T" id="Cuh-nw-s4x"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="erJ-Fq-hUJ"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="51g-ZX-tm4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="714" y="-350"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="Eqk-Xb-eOo">
+            <objects>
+                <viewController id="7Hp-2X-Nvf" customClass="WebViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Sv6-5x-ofR"/>
+                        <viewControllerLayoutGuide type="bottom" id="8ht-tG-eIw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ofU-5e-qAE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9n8-q1-BCt">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9n8-q1-BCt" firstAttribute="top" secondItem="ofU-5e-qAE" secondAttribute="top" id="eQa-JW-05G"/>
+                            <constraint firstAttribute="trailing" secondItem="9n8-q1-BCt" secondAttribute="trailing" id="rKK-hm-eeE"/>
+                            <constraint firstItem="9n8-q1-BCt" firstAttribute="leading" secondItem="ofU-5e-qAE" secondAttribute="leading" id="uFs-ue-c5f"/>
+                            <constraint firstItem="8ht-tG-eIw" firstAttribute="top" secondItem="9n8-q1-BCt" secondAttribute="bottom" id="wLM-18-F3f"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="EvG-yv-N5x"/>
+                    <connections>
+                        <outlet property="webView" destination="9n8-q1-BCt" id="gQj-3R-cO8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cHa-sd-Y1e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="618" y="-859"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="I6U-sy-gex">
@@ -67,4 +160,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="hSM-Qb-0dV"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -7,6 +7,8 @@
 //
 
 #import "TypesTableViewController.h"
+#import "RaceCollectionViewController.h"
+#import "WebViewController.h"
 
 #import "PokedexModel.h"
 #import "Race.h"
@@ -14,7 +16,6 @@
 
 @interface TypesTableViewController ()
 @property (strong, nonatomic) IBOutlet PokedexModel *pokedexModel;
-
 @end
 
 @implementation TypesTableViewController
@@ -112,15 +113,35 @@
 }
 */
 
-/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:@"Show Races"]) {
+        
+        // Get the new view controller using [segue destinationViewController].
+        NSIndexPath *ip = [self.tableView indexPathForCell:sender];
+        RaceCollectionViewController *rcvc = segue.destinationViewController;
+        
+        // Pass the selected object to the new view controller.
+        rcvc.type = self.pokedexModel.types[ip.item];
+    }
+    
+    if ([segue.identifier isEqualToString:@"Show Type Web"]) {
+        
+        // Get the new view controller using [segue destinationViewController].
+        NSIndexPath *ip = [self.tableView indexPathForCell:sender];
+        WebViewController *wvc = segue.destinationViewController;
+        
+        Type *type = self.pokedexModel.types[ip.item];
+        
+        NSString *str = [NSString stringWithFormat:@"http://es.pokemon.wikia.com/wiki/Tipo_%@", type.name];
+        
+        // Pass the selected object to the new view controller.
+        wvc.str = str;
+        wvc.webTitle = [type.name capitalizedString];
+    }
 }
-*/
 
 @end

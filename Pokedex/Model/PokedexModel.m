@@ -42,6 +42,7 @@
             NSArray* typeRaces = [mutRaces objectsAtIndexes:indexes];
             [mutTypes addObject:[[Type alloc] initWithName:typeName races:typeRaces]];
         }];
+        
         // Asignar valor a las propiedades
         _races = [mutRaces sortedArrayUsingComparator:^NSComparisonResult(Race* race1, Race* race2) {
             return [race1.name compare:race2.name];

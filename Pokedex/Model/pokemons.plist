@@ -1195,7 +1195,7 @@
 			<integer>13</integer>
 			<integer>193</integer>
 		</array>
-		<key>demonio</key>
+		<key>siniestro</key>
 		<array>
 			<integer>229</integer>
 			<integer>228</integer>
@@ -1357,7 +1357,6 @@
 			<integer>46</integer>
 			<integer>47</integer>
 			<integer>188</integer>
-			<integer>208</integer>
 			<integer>192</integer>
 			<integer>191</integer>
 			<integer>114</integer>
