@@ -22,14 +22,16 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.title = [self.type.name capitalizedString];
     
     // Ordenamos los pokemons
     NSSortDescriptor *sort = [NSSortDescriptor sortDescriptorWithKey:@"code" ascending:YES];
-    if (self.type)
+    if (self.type) {
+        self.title = [self.type.name capitalizedString];
         self.racesSorted = [self.type.races sortedArrayUsingDescriptors:[NSArray arrayWithObject:sort]];
-    else if (self.gen)
+    } else if (self.gen) {
+        self.title = [self.gen.name capitalizedString];
         self.racesSorted = [self.gen.races sortedArrayUsingDescriptors:[NSArray arrayWithObject:sort]];
+    }
 }
 
 - (void)didReceiveMemoryWarning

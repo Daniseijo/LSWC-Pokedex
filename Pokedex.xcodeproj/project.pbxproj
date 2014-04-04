@@ -281,6 +281,24 @@
 		5E89A97E18EDA9150055E143 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E89A97D18EDA9150055E143 /* WebViewController.m */; };
 		5E89A98118EDC2B00055E143 /* GenerationsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E89A98018EDC2B00055E143 /* GenerationsTableViewController.m */; };
 		5E89A98418EDCEAF0055E143 /* Generation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E89A98318EDCEAF0055E143 /* Generation.m */; };
+		5E915B6C18EE2A4C0022D9D0 /* tipo_acero.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E915B5B18EE2A4C0022D9D0 /* tipo_acero.png */; };
+		5E915B6D18EE2A4C0022D9D0 /* tipo_agua.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E915B5C18EE2A4C0022D9D0 /* tipo_agua.png */; };
+		5E915B6E18EE2A4C0022D9D0 /* tipo_bicho.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E915B5D18EE2A4C0022D9D0 /* tipo_bicho.png */; };
+		5E915B6F18EE2A4C0022D9D0 /* tipo_dragón.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E915B5E18EE2A4C0022D9D0 /* tipo_dragón.png */; };
+		5E915B7018EE2A4C0022D9D0 /* tipo_eléctrico.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E915B5F18EE2A4C0022D9D0 /* tipo_eléctrico.png */; };
+		5E915B7118EE2A4C0022D9D0 /* tipo_fantasma.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E915B6018EE2A4C0022D9D0 /* tipo_fantasma.png */; };
+		5E915B7218EE2A4C0022D9D0 /* tipo_fuego.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E915B6118EE2A4C0022D9D0 /* tipo_fuego.png */; };
+		5E915B7318EE2A4C0022D9D0 /* tipo_hielo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E915B6218EE2A4C0022D9D0 /* tipo_hielo.png */; };
+		5E915B7418EE2A4C0022D9D0 /* tipo_lucha.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E915B6318EE2A4C0022D9D0 /* tipo_lucha.png */; };
+		5E915B7518EE2A4C0022D9D0 /* tipo_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E915B6418EE2A4C0022D9D0 /* tipo_normal.png */; };
+		5E915B7618EE2A4C0022D9D0 /* tipo_planta.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E915B6518EE2A4C0022D9D0 /* tipo_planta.png */; };
+		5E915B7718EE2A4C0022D9D0 /* tipo_psíquico.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E915B6618EE2A4C0022D9D0 /* tipo_psíquico.png */; };
+		5E915B7818EE2A4C0022D9D0 /* tipo_roca.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E915B6718EE2A4C0022D9D0 /* tipo_roca.png */; };
+		5E915B7918EE2A4C0022D9D0 /* tipo_siniestro.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E915B6818EE2A4C0022D9D0 /* tipo_siniestro.png */; };
+		5E915B7A18EE2A4C0022D9D0 /* tipo_tierra.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E915B6918EE2A4C0022D9D0 /* tipo_tierra.png */; };
+		5E915B7B18EE2A4C0022D9D0 /* tipo_veneno.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E915B6A18EE2A4C0022D9D0 /* tipo_veneno.png */; };
+		5E915B7C18EE2A4C0022D9D0 /* tipo_volador.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E915B6B18EE2A4C0022D9D0 /* tipo_volador.png */; };
+		5E915B7E18EE2C2F0022D9D0 /* tipo_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E915B7D18EE2C2F0022D9D0 /* tipo_normal.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -581,6 +599,26 @@
 		5E89A98018EDC2B00055E143 /* GenerationsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenerationsTableViewController.m; sourceTree = "<group>"; };
 		5E89A98218EDCEAF0055E143 /* Generation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Generation.h; path = Model/Generation.h; sourceTree = "<group>"; };
 		5E89A98318EDCEAF0055E143 /* Generation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Generation.m; path = Model/Generation.m; sourceTree = "<group>"; };
+		5E915B5518EE1C0F0022D9D0 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5E915B5618EE1C0F0022D9D0 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5E915B5B18EE2A4C0022D9D0 /* tipo_acero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tipo_acero.png; sourceTree = "<group>"; };
+		5E915B5C18EE2A4C0022D9D0 /* tipo_agua.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tipo_agua.png; sourceTree = "<group>"; };
+		5E915B5D18EE2A4C0022D9D0 /* tipo_bicho.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tipo_bicho.png; sourceTree = "<group>"; };
+		5E915B5E18EE2A4C0022D9D0 /* tipo_dragón.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tipo_dragón.png"; sourceTree = "<group>"; };
+		5E915B5F18EE2A4C0022D9D0 /* tipo_eléctrico.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tipo_eléctrico.png"; sourceTree = "<group>"; };
+		5E915B6018EE2A4C0022D9D0 /* tipo_fantasma.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tipo_fantasma.png; sourceTree = "<group>"; };
+		5E915B6118EE2A4C0022D9D0 /* tipo_fuego.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tipo_fuego.png; sourceTree = "<group>"; };
+		5E915B6218EE2A4C0022D9D0 /* tipo_hielo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tipo_hielo.png; sourceTree = "<group>"; };
+		5E915B6318EE2A4C0022D9D0 /* tipo_lucha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tipo_lucha.png; sourceTree = "<group>"; };
+		5E915B6418EE2A4C0022D9D0 /* tipo_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tipo_normal.png; sourceTree = "<group>"; };
+		5E915B6518EE2A4C0022D9D0 /* tipo_planta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tipo_planta.png; sourceTree = "<group>"; };
+		5E915B6618EE2A4C0022D9D0 /* tipo_psíquico.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tipo_psíquico.png"; sourceTree = "<group>"; };
+		5E915B6718EE2A4C0022D9D0 /* tipo_roca.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tipo_roca.png; sourceTree = "<group>"; };
+		5E915B6818EE2A4C0022D9D0 /* tipo_siniestro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tipo_siniestro.png; sourceTree = "<group>"; };
+		5E915B6918EE2A4C0022D9D0 /* tipo_tierra.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tipo_tierra.png; sourceTree = "<group>"; };
+		5E915B6A18EE2A4C0022D9D0 /* tipo_veneno.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tipo_veneno.png; sourceTree = "<group>"; };
+		5E915B6B18EE2A4C0022D9D0 /* tipo_volador.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tipo_volador.png; sourceTree = "<group>"; };
+		5E915B7D18EE2C2F0022D9D0 /* tipo_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tipo_normal.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -640,6 +678,7 @@
 		5E02C5CA18ED69DC0049AD84 /* Pokedex */ = {
 			isa = PBXGroup;
 			children = (
+				5E915B5A18EE2A4C0022D9D0 /* tipo_icon */,
 				5E02C5F918ED6E900049AD84 /* icon */,
 				5E02C5D318ED69DC0049AD84 /* PokedexAppDelegate.h */,
 				5E02C5D418ED69DC0049AD84 /* PokedexAppDelegate.m */,
@@ -964,6 +1003,31 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		5E915B5A18EE2A4C0022D9D0 /* tipo_icon */ = {
+			isa = PBXGroup;
+			children = (
+				5E915B7D18EE2C2F0022D9D0 /* tipo_normal.png */,
+				5E915B5B18EE2A4C0022D9D0 /* tipo_acero.png */,
+				5E915B5C18EE2A4C0022D9D0 /* tipo_agua.png */,
+				5E915B5D18EE2A4C0022D9D0 /* tipo_bicho.png */,
+				5E915B5E18EE2A4C0022D9D0 /* tipo_dragón.png */,
+				5E915B5F18EE2A4C0022D9D0 /* tipo_eléctrico.png */,
+				5E915B6018EE2A4C0022D9D0 /* tipo_fantasma.png */,
+				5E915B6118EE2A4C0022D9D0 /* tipo_fuego.png */,
+				5E915B6218EE2A4C0022D9D0 /* tipo_hielo.png */,
+				5E915B6318EE2A4C0022D9D0 /* tipo_lucha.png */,
+				5E915B6418EE2A4C0022D9D0 /* tipo_normal.png */,
+				5E915B6518EE2A4C0022D9D0 /* tipo_planta.png */,
+				5E915B6618EE2A4C0022D9D0 /* tipo_psíquico.png */,
+				5E915B6718EE2A4C0022D9D0 /* tipo_roca.png */,
+				5E915B6818EE2A4C0022D9D0 /* tipo_siniestro.png */,
+				5E915B6918EE2A4C0022D9D0 /* tipo_tierra.png */,
+				5E915B6A18EE2A4C0022D9D0 /* tipo_veneno.png */,
+				5E915B6B18EE2A4C0022D9D0 /* tipo_volador.png */,
+			);
+			path = tipo_icon;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1027,6 +1091,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = 5E02C5B818ED69DC0049AD84;
 			productRefGroup = 5E02C5C218ED69DC0049AD84 /* Products */;
@@ -1049,6 +1114,7 @@
 				5E02C74818ED6E910049AD84 /* 084.gif in Resources */,
 				5E02C74718ED6E910049AD84 /* 083.gif in Resources */,
 				5E02C72C18ED6E910049AD84 /* 056.gif in Resources */,
+				5E915B7C18EE2A4C0022D9D0 /* tipo_volador.png in Resources */,
 				5E02C7CB18ED6E910049AD84 /* 215.gif in Resources */,
 				5E02C7E518ED6E910049AD84 /* 241.gif in Resources */,
 				5E02C77118ED6E910049AD84 /* 125.gif in Resources */,
@@ -1100,6 +1166,9 @@
 				5E02C74A18ED6E910049AD84 /* 086.gif in Resources */,
 				5E02C7DD18ED6E910049AD84 /* 233.gif in Resources */,
 				5E02C7EA18ED6E910049AD84 /* 246.gif in Resources */,
+				5E915B7E18EE2C2F0022D9D0 /* tipo_normal.png in Resources */,
+				5E915B6D18EE2A4C0022D9D0 /* tipo_agua.png in Resources */,
+				5E915B7418EE2A4C0022D9D0 /* tipo_lucha.png in Resources */,
 				5E02C74E18ED6E910049AD84 /* 090.gif in Resources */,
 				5E02C79D18ED6E910049AD84 /* 169.gif in Resources */,
 				5E02C79318ED6E910049AD84 /* 159.gif in Resources */,
@@ -1110,6 +1179,7 @@
 				5E02C7A418ED6E910049AD84 /* 176.gif in Resources */,
 				5E02C79A18ED6E910049AD84 /* 166.gif in Resources */,
 				5E02C76418ED6E910049AD84 /* 112.gif in Resources */,
+				5E915B7A18EE2A4C0022D9D0 /* tipo_tierra.png in Resources */,
 				5E02C74418ED6E910049AD84 /* 080.gif in Resources */,
 				5E02C7EF18ED6E910049AD84 /* 251.gif in Resources */,
 				5E02C78C18ED6E910049AD84 /* 152.gif in Resources */,
@@ -1121,6 +1191,7 @@
 				5E02C77F18ED6E910049AD84 /* 139.gif in Resources */,
 				5E02C70D18ED6E910049AD84 /* 025.gif in Resources */,
 				5E02C75A18ED6E910049AD84 /* 102.gif in Resources */,
+				5E915B7618EE2A4C0022D9D0 /* tipo_planta.png in Resources */,
 				5E02C73318ED6E910049AD84 /* 063.gif in Resources */,
 				5E02C71E18ED6E910049AD84 /* 042.gif in Resources */,
 				5E02C76C18ED6E910049AD84 /* 120.gif in Resources */,
@@ -1157,6 +1228,7 @@
 				5E02C72B18ED6E910049AD84 /* 055.gif in Resources */,
 				5E02C77C18ED6E910049AD84 /* 136.gif in Resources */,
 				5E02C79818ED6E910049AD84 /* 164.gif in Resources */,
+				5E915B7018EE2A4C0022D9D0 /* tipo_eléctrico.png in Resources */,
 				5E02C78A18ED6E910049AD84 /* 150.gif in Resources */,
 				5E02C7BA18ED6E910049AD84 /* 198.gif in Resources */,
 				5E02C7A218ED6E910049AD84 /* 174.gif in Resources */,
@@ -1177,6 +1249,7 @@
 				5E02C7AA18ED6E910049AD84 /* 182.gif in Resources */,
 				5E02C76D18ED6E910049AD84 /* 121.gif in Resources */,
 				5E02C6F718ED6E910049AD84 /* 003.gif in Resources */,
+				5E915B6F18EE2A4C0022D9D0 /* tipo_dragón.png in Resources */,
 				5E02C7AF18ED6E910049AD84 /* 187.gif in Resources */,
 				5E02C7A518ED6E910049AD84 /* 177.gif in Resources */,
 				5E02C73218ED6E910049AD84 /* 062.gif in Resources */,
@@ -1203,16 +1276,22 @@
 				5E02C7A618ED6E910049AD84 /* 178.gif in Resources */,
 				5E02C7D618ED6E910049AD84 /* 226.gif in Resources */,
 				5E02C70618ED6E910049AD84 /* 018.gif in Resources */,
+				5E915B7118EE2A4C0022D9D0 /* tipo_fantasma.png in Resources */,
 				5E02C76518ED6E910049AD84 /* 113.gif in Resources */,
 				5E02C7C318ED6E910049AD84 /* 207.gif in Resources */,
+				5E915B7318EE2A4C0022D9D0 /* tipo_hielo.png in Resources */,
 				5E02C73818ED6E910049AD84 /* 068.gif in Resources */,
 				5E02C78318ED6E910049AD84 /* 143.gif in Resources */,
 				5E02C7BE18ED6E910049AD84 /* 202.gif in Resources */,
 				5E02C7DA18ED6E910049AD84 /* 230.gif in Resources */,
 				5E02C7B018ED6E910049AD84 /* 188.gif in Resources */,
+				5E915B7B18EE2A4C0022D9D0 /* tipo_veneno.png in Resources */,
+				5E915B6C18EE2A4C0022D9D0 /* tipo_acero.png in Resources */,
 				5E02C75E18ED6E910049AD84 /* 106.gif in Resources */,
 				5E02C75B18ED6E910049AD84 /* 103.gif in Resources */,
+				5E915B7818EE2A4C0022D9D0 /* tipo_roca.png in Resources */,
 				5E02C7EE18ED6E910049AD84 /* 250.gif in Resources */,
+				5E915B7518EE2A4C0022D9D0 /* tipo_normal.png in Resources */,
 				5E02C75518ED6E910049AD84 /* 097.gif in Resources */,
 				5E02C70E18ED6E910049AD84 /* 026.gif in Resources */,
 				5E02C7A818ED6E910049AD84 /* 180.gif in Resources */,
@@ -1251,6 +1330,7 @@
 				5E02C7DB18ED6E910049AD84 /* 231.gif in Resources */,
 				5E02C71318ED6E910049AD84 /* 031.gif in Resources */,
 				5E02C72618ED6E910049AD84 /* 050.gif in Resources */,
+				5E915B7918EE2A4C0022D9D0 /* tipo_siniestro.png in Resources */,
 				5E02C75918ED6E910049AD84 /* 101.gif in Resources */,
 				5E02C7C418ED6E910049AD84 /* 208.gif in Resources */,
 				5E02C78718ED6E910049AD84 /* 147.gif in Resources */,
@@ -1259,6 +1339,7 @@
 				5E02C71818ED6E910049AD84 /* 036.gif in Resources */,
 				5E02C7B318ED6E910049AD84 /* 191.gif in Resources */,
 				5E02C72A18ED6E910049AD84 /* 054.gif in Resources */,
+				5E915B6E18EE2A4C0022D9D0 /* tipo_bicho.png in Resources */,
 				5E02C79118ED6E910049AD84 /* 157.gif in Resources */,
 				5E02C5CF18ED69DC0049AD84 /* InfoPlist.strings in Resources */,
 				5E02C73018ED6E910049AD84 /* 060.gif in Resources */,
@@ -1279,7 +1360,9 @@
 				5E02C7A018ED6E910049AD84 /* 172.gif in Resources */,
 				5E02C7AD18ED6E910049AD84 /* 185.gif in Resources */,
 				5E02C7BB18ED6E910049AD84 /* 199.gif in Resources */,
+				5E915B7718EE2A4C0022D9D0 /* tipo_psíquico.png in Resources */,
 				5E02C76218ED6E910049AD84 /* 110.gif in Resources */,
+				5E915B7218EE2A4C0022D9D0 /* tipo_fuego.png in Resources */,
 				5E02C7E718ED6E910049AD84 /* 243.gif in Resources */,
 				5E02C7E918ED6E910049AD84 /* 245.gif in Resources */,
 				5E02C7C918ED6E910049AD84 /* 213.gif in Resources */,
@@ -1354,6 +1437,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				5E02C5CE18ED69DC0049AD84 /* en */,
+				5E915B5518EE1C0F0022D9D0 /* es */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -1370,6 +1454,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				5E02C5ED18ED69DC0049AD84 /* en */,
+				5E915B5618EE1C0F0022D9D0 /* es */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";

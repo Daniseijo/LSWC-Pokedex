@@ -40,7 +40,7 @@
                             <outlet property="delegate" destination="DVs-pP-Do5" id="VhA-zU-7jj"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="Qi2-Yt-u6S"/>
+                    <tabBarItem key="tabBarItem" title="Tipo" image="Oak_icon" id="Qi2-Yt-u6S"/>
                     <navigationItem key="navigationItem" title="Pokedex" id="n1S-u0-nDD"/>
                     <connections>
                         <outlet property="pokedexModel" destination="lTy-FA-PAl" id="LZJ-vU-oNi"/>
@@ -49,9 +49,9 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FQk-Ji-cos" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <customObject id="lTy-FA-PAl" customClass="PokedexModel"/>
             </objects>
-            <point key="canvasLocation" x="19" y="-946"/>
+            <point key="canvasLocation" x="13" y="-940"/>
         </scene>
-        <!--Generations Table View Controller - Root View Controller-->
+        <!--Generations Table View Controller - Pokedex-->
         <scene sceneID="XkT-Rq-nGv">
             <objects>
                 <tableViewController id="R95-K8-PkJ" customClass="GenerationsTableViewController" sceneMemberID="viewController">
@@ -87,7 +87,7 @@
                             <outlet property="delegate" destination="R95-K8-PkJ" id="j3n-dL-CrG"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="lUW-Mn-LaD"/>
+                    <navigationItem key="navigationItem" title="Pokedex" id="lUW-Mn-LaD"/>
                     <connections>
                         <outlet property="pokedexModel" destination="1DG-iG-wHh" id="xmA-1s-4Cl"/>
                     </connections>
@@ -95,13 +95,13 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="klT-v0-s5s" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <customObject id="1DG-iG-wHh" customClass="PokedexModel"/>
             </objects>
-            <point key="canvasLocation" x="19" y="-307"/>
+            <point key="canvasLocation" x="13" y="-307"/>
         </scene>
-        <!--Navigation Controller - Item-->
+        <!--Navigation Controller - Generación-->
         <scene sceneID="qyd-b7-U3l">
             <objects>
                 <navigationController definesPresentationContext="YES" id="7hZ-Hf-BD1" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="mWp-Zl-w8Q"/>
+                    <tabBarItem key="tabBarItem" title="Generación" image="Charmander_icon" id="mWp-Zl-w8Q"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="OKM-Z7-SfA">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -122,28 +122,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="U8o-yV-Rpw">
-                            <size key="itemSize" width="93" height="84"/>
+                            <size key="itemSize" width="93" height="90"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PokemonCell" id="dpl-xZ-bko" customClass="PokemonCVCell">
-                                <rect key="frame" x="0.0" y="64" width="93" height="84"/>
+                                <rect key="frame" x="0.0" y="64" width="93" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="93" height="84"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="93" height="90"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w7C-HT-unc">
-                                            <rect key="frame" x="0.0" y="63" width="93" height="21"/>
+                                            <rect key="frame" x="0.0" y="69" width="93" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TQh-1T-sk9">
-                                            <rect key="frame" x="19" y="0.0" width="55" height="55"/>
+                                            <rect key="frame" x="19" y="8" width="55" height="55"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                     </subviews>
@@ -165,7 +165,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="51g-ZX-tm4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="714" y="-350"/>
+            <point key="canvasLocation" x="678" y="-307"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="Eqk-Xb-eOo">
@@ -187,10 +187,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="9n8-q1-BCt" secondAttribute="bottom" id="TBy-38-1Np"/>
-                            <constraint firstItem="9n8-q1-BCt" firstAttribute="top" secondItem="ofU-5e-qAE" secondAttribute="top" id="eQa-JW-05G"/>
-                            <constraint firstAttribute="trailing" secondItem="9n8-q1-BCt" secondAttribute="trailing" id="rKK-hm-eeE"/>
-                            <constraint firstItem="9n8-q1-BCt" firstAttribute="leading" secondItem="ofU-5e-qAE" secondAttribute="leading" id="uFs-ue-c5f"/>
+                            <constraint firstAttribute="bottom" secondItem="9n8-q1-BCt" secondAttribute="bottom" id="7qY-9J-NrH"/>
+                            <constraint firstAttribute="trailing" secondItem="9n8-q1-BCt" secondAttribute="trailing" id="sx1-aO-aQB"/>
+                            <constraint firstItem="9n8-q1-BCt" firstAttribute="leading" secondItem="ofU-5e-qAE" secondAttribute="leading" id="xFe-UH-w44"/>
+                            <constraint firstItem="9n8-q1-BCt" firstAttribute="top" secondItem="ofU-5e-qAE" secondAttribute="top" id="yH7-eP-hAA"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="EvG-yv-N5x">
@@ -206,13 +206,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cHa-sd-Y1e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1036" y="-1010"/>
+            <point key="canvasLocation" x="1194" y="-940"/>
         </scene>
-        <!--Navigation Controller - Item-->
+        <!--Navigation Controller - Tipo-->
         <scene sceneID="I6U-sy-gex">
             <objects>
                 <navigationController definesPresentationContext="YES" id="Hkb-MS-Hah" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="f3s-oO-P3Y"/>
+                    <tabBarItem key="tabBarItem" title="Tipo" image="Oak_icon" id="f3s-oO-P3Y"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="HIp-rO-T7g">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -222,7 +222,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Erb-uH-I2K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-439" y="-946"/>
+            <point key="canvasLocation" x="-439" y="-940"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="A0A-Wd-PEq">
@@ -241,16 +241,20 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yHR-GC-Bsf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1000" y="-790"/>
+            <point key="canvasLocation" x="-1044" y="-594"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Charmander_icon" width="25" height="25"/>
+        <image name="Oak_icon" width="25" height="25"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="tfa-Hb-De6"/>
         <segue reference="fa7-m1-aA3"/>
+        <segue reference="tfa-Hb-De6"/>
     </inferredMetricsTieBreakers>
 </document>

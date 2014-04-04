@@ -69,10 +69,18 @@
     
     // Configure the cell...
     Generation *gen = self.pokedexModel.generations[indexPath.row];
-    
     // Rellenar la celda
     cell.textLabel.text = [gen.name capitalizedString];
     
+    // Aleatoriamente acompañamos la etiqueta con uno de los 3 pokemons iniciales de cada generación
+    
+    // Ordenamos el array...
+    NSSortDescriptor *sort = [NSSortDescriptor sortDescriptorWithKey:@"code" ascending:YES];
+    NSArray *racesSorted = [gen.races sortedArrayUsingDescriptors:[NSArray arrayWithObject:sort]];
+    
+    // ...y cogemos aleatoriamente el pokemon 1, 4 o 7 de cada generación. (Pokemon inicial de planta, fuego o agua)
+    Race *raceRand = racesSorted[(3 * (arc4random() % 3))];
+    cell.imageView.image = [UIImage imageNamed:raceRand.icon];
     return cell;
 }
 

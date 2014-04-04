@@ -29,6 +29,15 @@
     return self;
 }
 
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -71,6 +80,7 @@
     
     // Rellenar la celda
     cell.textLabel.text = [type.name capitalizedString];
+    cell.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"tipo_%@.png", type.name]];
     
     return cell;
 }
