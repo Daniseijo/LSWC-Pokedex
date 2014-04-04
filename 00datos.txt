@@ -1,0 +1,18 @@
+LSWC - Práctica 4 - Pokedex
+GRUPO 102:
+Daniel Sánchez Seijo
+José Santos Sánchez Sánchez
+
+AUTOEVALUACIÓN:
+Funciona - 8 puntos
+Uso de iconos e imágenes, layout y rotación de terminal - 2 puntos
+Mejora: Collection View - 3 puntos
+Mejoras libres - 2 puntos
+
+Descripción de mejoras: Entre las mejoras, hemos incluido:
+	- Opción de ordenar los Pokemons por generaciones a través de un Tab Bar.
+	- Iconos de cada tipo pokemon en la table view.
+	- Acceso a la información de la página web acerca de cada tipo.
+	- Icono aleatorio de uno de los tres posibles pokemons iniciales para ilustrar la generación correspondiente en la table view.
+	- Acceso a la información de la página web acerca de cada generación.
+	- En la vista web, se incluye un botón de compartir, que permite copiar el enlace, enviarlo por correo, añadirlo a lista de lectura o publicarlo en varias redes sociales.

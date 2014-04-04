@@ -13,7 +13,6 @@
 		5E02C5CF18ED69DC0049AD84 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5E02C5CD18ED69DC0049AD84 /* InfoPlist.strings */; };
 		5E02C5D118ED69DC0049AD84 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E02C5D018ED69DC0049AD84 /* main.m */; };
 		5E02C5D518ED69DC0049AD84 /* PokedexAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E02C5D418ED69DC0049AD84 /* PokedexAppDelegate.m */; };
-		5E02C5D818ED69DC0049AD84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E02C5D618ED69DC0049AD84 /* Main.storyboard */; };
 		5E02C5DD18ED69DC0049AD84 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E02C5DC18ED69DC0049AD84 /* Images.xcassets */; };
 		5E02C5E418ED69DC0049AD84 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E02C5E318ED69DC0049AD84 /* XCTest.framework */; };
 		5E02C5E518ED69DC0049AD84 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E02C5C418ED69DC0049AD84 /* Foundation.framework */; };
@@ -290,7 +289,6 @@
 		5E915B7218EE2A4C0022D9D0 /* tipo_fuego.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E915B6118EE2A4C0022D9D0 /* tipo_fuego.png */; };
 		5E915B7318EE2A4C0022D9D0 /* tipo_hielo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E915B6218EE2A4C0022D9D0 /* tipo_hielo.png */; };
 		5E915B7418EE2A4C0022D9D0 /* tipo_lucha.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E915B6318EE2A4C0022D9D0 /* tipo_lucha.png */; };
-		5E915B7518EE2A4C0022D9D0 /* tipo_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E915B6418EE2A4C0022D9D0 /* tipo_normal.png */; };
 		5E915B7618EE2A4C0022D9D0 /* tipo_planta.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E915B6518EE2A4C0022D9D0 /* tipo_planta.png */; };
 		5E915B7718EE2A4C0022D9D0 /* tipo_psíquico.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E915B6618EE2A4C0022D9D0 /* tipo_psíquico.png */; };
 		5E915B7818EE2A4C0022D9D0 /* tipo_roca.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E915B6718EE2A4C0022D9D0 /* tipo_roca.png */; };
@@ -1291,7 +1289,6 @@
 				5E02C75B18ED6E910049AD84 /* 103.gif in Resources */,
 				5E915B7818EE2A4C0022D9D0 /* tipo_roca.png in Resources */,
 				5E02C7EE18ED6E910049AD84 /* 250.gif in Resources */,
-				5E915B7518EE2A4C0022D9D0 /* tipo_normal.png in Resources */,
 				5E02C75518ED6E910049AD84 /* 097.gif in Resources */,
 				5E02C70E18ED6E910049AD84 /* 026.gif in Resources */,
 				5E02C7A818ED6E910049AD84 /* 180.gif in Resources */,
@@ -1346,7 +1343,6 @@
 				5E02C7BF18ED6E910049AD84 /* 203.gif in Resources */,
 				5E02C76B18ED6E910049AD84 /* 119.gif in Resources */,
 				5E02C74318ED6E910049AD84 /* 079.gif in Resources */,
-				5E02C5D818ED69DC0049AD84 /* Main.storyboard in Resources */,
 				5E02C7E318ED6E910049AD84 /* 239.gif in Resources */,
 				5E02C73C18ED6E910049AD84 /* 072.gif in Resources */,
 				5E02C72F18ED6E910049AD84 /* 059.gif in Resources */,
