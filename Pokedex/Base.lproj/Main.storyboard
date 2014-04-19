@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="YcF-eI-UMv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="YcF-eI-UMv">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--Types Table View Controller - Pokedex-->
+        <!--Types Table View Controller - Tipo-->
         <scene sceneID="6np-mK-Qxe">
             <objects>
                 <tableViewController id="DVs-pP-Do5" customClass="TypesTableViewController" sceneMemberID="viewController">
@@ -41,7 +41,7 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Tipo" image="Oak_icon" id="Qi2-Yt-u6S"/>
-                    <navigationItem key="navigationItem" title="Pokedex" id="n1S-u0-nDD"/>
+                    <navigationItem key="navigationItem" title="Tipo" id="n1S-u0-nDD"/>
                     <connections>
                         <outlet property="pokedexModel" destination="lTy-FA-PAl" id="LZJ-vU-oNi"/>
                     </connections>
@@ -51,7 +51,7 @@
             </objects>
             <point key="canvasLocation" x="13" y="-940"/>
         </scene>
-        <!--Generations Table View Controller - Pokedex-->
+        <!--Generations Table View Controller - Generación-->
         <scene sceneID="XkT-Rq-nGv">
             <objects>
                 <tableViewController id="R95-K8-PkJ" customClass="GenerationsTableViewController" sceneMemberID="viewController">
@@ -87,7 +87,7 @@
                             <outlet property="delegate" destination="R95-K8-PkJ" id="j3n-dL-CrG"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Pokedex" id="lUW-Mn-LaD"/>
+                    <navigationItem key="navigationItem" title="Generación" id="lUW-Mn-LaD"/>
                     <connections>
                         <outlet property="pokedexModel" destination="1DG-iG-wHh" id="xmA-1s-4Cl"/>
                     </connections>
@@ -237,16 +237,84 @@
                     <connections>
                         <segue destination="Hkb-MS-Hah" kind="relationship" relationship="viewControllers" id="ssQ-9G-rwv"/>
                         <segue destination="7hZ-Hf-BD1" kind="relationship" relationship="viewControllers" id="Ny7-Yv-BCz"/>
+                        <segue destination="e2g-ec-tic" kind="relationship" relationship="viewControllers" id="2s3-Ue-aT2"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yHR-GC-Bsf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1044" y="-594"/>
         </scene>
+        <!--Navigation Controller - Pokédex-->
+        <scene sceneID="529-OS-BhE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="e2g-ec-tic" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Pokédex" image="Pokedex_icon" id="Er3-bb-9qX"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="RFi-0l-36L">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="86a-s1-exl" kind="relationship" relationship="rootViewController" id="vUY-Uc-b2p"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NoC-6d-gNs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-439" y="318"/>
+        </scene>
+        <!--Table View Controller - Pokédex-->
+        <scene sceneID="fL0-EW-p8l">
+            <objects>
+                <tableViewController id="86a-s1-exl" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="G64-h1-BND">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Pokedex Cell" textLabel="XRJ-BA-S1O" detailTextLabel="1tP-Fa-IFo" style="IBUITableViewCellStyleSubtitle" id="KlJ-hU-1Jf">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KlJ-hU-1Jf" id="g5L-SG-Ebr">
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XRJ-BA-S1O">
+                                            <rect key="frame" x="15" y="3" width="34" height="22"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1tP-Fa-IFo">
+                                            <rect key="frame" x="15" y="25" width="43" height="15"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="86a-s1-exl" id="6Kb-60-8UU"/>
+                            <outlet property="delegate" destination="86a-s1-exl" id="isb-fT-Rrq"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Pokédex" id="BWv-MO-6KD">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="769-Mf-4Z9"/>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eJE-MQ-Lzu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13" y="318"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Charmander_icon" width="25" height="25"/>
         <image name="Oak_icon" width="25" height="25"/>
+        <image name="Pokedex_icon" width="25" height="25"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
