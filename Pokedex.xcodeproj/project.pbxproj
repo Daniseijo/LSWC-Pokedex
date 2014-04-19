@@ -13,6 +13,7 @@
 		5E02C5CF18ED69DC0049AD84 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5E02C5CD18ED69DC0049AD84 /* InfoPlist.strings */; };
 		5E02C5D118ED69DC0049AD84 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E02C5D018ED69DC0049AD84 /* main.m */; };
 		5E02C5D518ED69DC0049AD84 /* PokedexAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E02C5D418ED69DC0049AD84 /* PokedexAppDelegate.m */; };
+		5E02C5D818ED69DC0049AD84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E02C5D618ED69DC0049AD84 /* Main.storyboard */; };
 		5E02C5DD18ED69DC0049AD84 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E02C5DC18ED69DC0049AD84 /* Images.xcassets */; };
 		5E02C5E418ED69DC0049AD84 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E02C5E318ED69DC0049AD84 /* XCTest.framework */; };
 		5E02C5E518ED69DC0049AD84 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E02C5C418ED69DC0049AD84 /* Foundation.framework */; };
@@ -1343,6 +1344,7 @@
 				5E02C7BF18ED6E910049AD84 /* 203.gif in Resources */,
 				5E02C76B18ED6E910049AD84 /* 119.gif in Resources */,
 				5E02C74318ED6E910049AD84 /* 079.gif in Resources */,
+				5E02C5D818ED69DC0049AD84 /* Main.storyboard in Resources */,
 				5E02C7E318ED6E910049AD84 /* 239.gif in Resources */,
 				5E02C73C18ED6E910049AD84 /* 072.gif in Resources */,
 				5E02C72F18ED6E910049AD84 /* 059.gif in Resources */,
