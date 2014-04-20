@@ -7,9 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Race.h"
 
 @interface PokedexModel : NSObject
 @property (nonatomic, strong) NSArray* races;
 @property (nonatomic, strong) NSArray* types;
 @property (nonatomic, strong) NSArray* generations;
+
+- (Race*)searchRaceWithName:(NSString*)name;
 @end

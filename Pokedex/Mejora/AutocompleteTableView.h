@@ -13,6 +13,5 @@
 
 @interface AutocompleteTableView : UITableView <UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, weak) EditPokemonTableViewController *eptvc;
-@property (nonatomic, weak) NSMutableArray* autocompleteRace;
 @property (nonatomic, weak) PokedexModel *pokedexModel;
 @end

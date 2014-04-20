@@ -12,11 +12,11 @@
 #import "AutocompleteTableView.h"
 
 @interface EditPokemonTableViewController ()
-@property (weak, nonatomic) IBOutlet UITextField *nameLabel;
+@property (weak, nonatomic) IBOutlet UITextField *nameTextField;
 @property (strong, nonatomic) IBOutlet PokedexModel *pokedexModel;
 @property (weak, nonatomic) IBOutlet AutocompleteTableView *autocompleteTableView;
 
-@property (nonatomic, strong) NSMutableArray* autocompleteRace;
+
 @end
 
 @implementation EditPokemonTableViewController
@@ -46,13 +46,22 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    self.raceLabel.delegate = self;
+    
+    // Preparamos la tabla predictiva
+    self.raceTextField.delegate = self;
     
     self.autocompleteTableView.eptvc = self;
     self.autocompleteTableView.pokedexModel = self.pokedexModel;
     self.autocompleteTableView.dataSource = self.autocompleteTableView;
     self.autocompleteTableView.delegate = self.autocompleteTableView;
     self.autocompleteTableView.scrollEnabled = YES;
+    
+    // Inicializamos los valores del Pokemon
+    self.nameTextField.text = self.pokemon.name;
+    self.raceTextField.text = self.pokemon.race.name;
+    
+    [self.nameTextField becomeFirstResponder];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -74,14 +83,36 @@
             [self.autocompleteRace addObject:curRace];
         }
     }
-    self.autocompleteTableView.autocompleteRace = self.autocompleteRace;
     [self.autocompleteTableView reloadData];
+}
+
+#pragma mark - Table view delegate
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    switch (indexPath.section) {
+        case 0:
+            [self.nameTextField becomeFirstResponder];
+            break;
+        case 1:
+            [self.raceTextField becomeFirstResponder];
+            break;
+        default:
+            break;
+    }
+}
+
+- (IBAction)returnPressed:(UITextField *)sender {
+    if (sender == self.nameTextField) {
+        [self.raceTextField becomeFirstResponder];
+    }
 }
 
 #pragma mark UITextField delegate
 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
-    //self.racePicker.hidden = NO;
+    NSUInteger newLength = [textField.text length] + [string length] - range.length;
+    self.lengthTextField = newLength;
     
     NSString *substring = [NSString stringWithString:textField.text];
     substring = [substring stringByReplacingCharactersInRange:range withString:string];
@@ -165,15 +196,17 @@
 }
 */
 
-/*
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:@"Save Pokemon"]) {
+        Race *raceSave = [self.pokedexModel searchRaceWithName:self.raceTextField.text];
+        self.pokemon.name = [self.nameTextField.text capitalizedString];
+        self.pokemon.race = raceSave;
+    } else if ([segue.identifier isEqualToString:@"Cancel Pokemon"]) {
+        
+    }
 }
-*/
 
 @end

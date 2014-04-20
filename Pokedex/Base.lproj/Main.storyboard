@@ -331,7 +331,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <tableView key="tableFooterView" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="6bO-IE-x0W" customClass="AutocompleteTableView">
-                            <rect key="frame" x="0.0" y="196" width="320" height="235"/>
+                            <rect key="frame" x="0.0" y="196" width="320" height="104"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <prototypes>
@@ -357,7 +357,7 @@
                         <sections>
                             <tableViewSection headerTitle="Nombre:" id="2Gr-1n-4Ua">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="1Ja-u8-zFf">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="1Ja-u8-zFf">
                                         <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1Ja-u8-zFf" id="t4f-2L-T9p">
@@ -369,6 +369,9 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next"/>
+                                                    <connections>
+                                                        <action selector="returnPressed:" destination="gea-wl-SqB" eventType="editingDidEndOnExit" id="izJ-sy-KLb"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -383,7 +386,7 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="Raza:" id="XXt-1U-GNa">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="3py-fR-A2B">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="3py-fR-A2B">
                                         <rect key="frame" x="0.0" y="152" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3py-fR-A2B" id="Lts-kX-X8z">
@@ -395,6 +398,9 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done"/>
+                                                    <connections>
+                                                        <action selector="returnPressed:" destination="gea-wl-SqB" eventType="editingDidEndOnExit" id="LEY-4V-hvj"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -414,20 +420,29 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="Dh6-4C-dPe">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="3N0-M4-XS4"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="QUU-fk-89q"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="3N0-M4-XS4">
+                            <connections>
+                                <segue destination="rh0-O2-4BF" kind="unwind" identifier="Cancel Pokemon" unwindAction="pokemonWasCancel:" id="kBO-h8-BeF"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="QUU-fk-89q">
+                            <connections>
+                                <segue destination="rh0-O2-4BF" kind="unwind" identifier="Save Pokemon" unwindAction="pokemonWasChanged:" id="MUQ-fN-vi6"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="autocompleteTableView" destination="6bO-IE-x0W" id="NFr-Q7-Fnw"/>
-                        <outlet property="nameLabel" destination="6Iz-og-zC3" id="1g2-mw-gcQ"/>
+                        <outlet property="nameTextField" destination="6Iz-og-zC3" id="1dJ-99-GkP"/>
                         <outlet property="pokedexModel" destination="Orx-VH-Mgw" id="pGp-jv-LbG"/>
-                        <outlet property="raceLabel" destination="O3x-PF-shB" id="Hmj-vI-ogf"/>
+                        <outlet property="raceTextField" destination="O3x-PF-shB" id="Bt5-fW-Jat"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8fq-eF-nGY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="rh0-O2-4BF" userLabel="Exit" sceneMemberID="exit"/>
                 <customObject id="Orx-VH-Mgw" customClass="PokedexModel"/>
             </objects>
-            <point key="canvasLocation" x="1234" y="326"/>
+            <point key="canvasLocation" x="1234" y="318"/>
         </scene>
         <!--Pokemon View Controller-->
         <scene sceneID="3YZ-dD-35e">

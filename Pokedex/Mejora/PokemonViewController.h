@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "Pokemon.h"
+#import "Pokedex.h"
 
 @interface PokemonViewController : UIViewController
-@property (nonatomic, strong) Pokemon* pokemon;
+@property (nonatomic, strong) Pokemon *pokemon;
+@property (nonatomic, weak) Pokedex *pokedex;
 @end

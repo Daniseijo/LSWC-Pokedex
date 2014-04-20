@@ -276,6 +276,7 @@
 		5E02C7FB18ED70B70049AD84 /* Type.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E02C7FA18ED70B70049AD84 /* Type.m */; };
 		5E02C7FD18ED74A30049AD84 /* pokemons.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5E02C7FC18ED74A30049AD84 /* pokemons.plist */; };
 		5E02C80018ED7A2B0049AD84 /* TypesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E02C7FF18ED7A2B0049AD84 /* TypesTableViewController.m */; };
+		5E853F5F19041BA400B8D3FB /* 000.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5E853F5E19041BA400B8D3FB /* 000.gif */; };
 		5E89A97818ED99E10055E143 /* RaceCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E89A97718ED99E10055E143 /* RaceCollectionViewController.m */; };
 		5E89A97B18ED9B380055E143 /* PokemonCVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E89A97A18ED9B380055E143 /* PokemonCVCell.m */; };
 		5E89A97E18EDA9150055E143 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E89A97D18EDA9150055E143 /* WebViewController.m */; };
@@ -594,6 +595,7 @@
 		5E02C7FC18ED74A30049AD84 /* pokemons.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = pokemons.plist; path = Model/pokemons.plist; sourceTree = "<group>"; };
 		5E02C7FE18ED7A2B0049AD84 /* TypesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypesTableViewController.h; sourceTree = "<group>"; };
 		5E02C7FF18ED7A2B0049AD84 /* TypesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypesTableViewController.m; sourceTree = "<group>"; };
+		5E853F5E19041BA400B8D3FB /* 000.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 000.gif; sourceTree = "<group>"; };
 		5E89A97618ED99E10055E143 /* RaceCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RaceCollectionViewController.h; sourceTree = "<group>"; };
 		5E89A97718ED99E10055E143 /* RaceCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RaceCollectionViewController.m; sourceTree = "<group>"; };
 		5E89A97918ED9B380055E143 /* PokemonCVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PokemonCVCell.h; sourceTree = "<group>"; };
@@ -750,6 +752,7 @@
 		5E02C5F918ED6E900049AD84 /* icon */ = {
 			isa = PBXGroup;
 			children = (
+				5E853F5E19041BA400B8D3FB /* 000.gif */,
 				5E02C5FA18ED6E900049AD84 /* 001.gif */,
 				5E02C5FB18ED6E900049AD84 /* 002.gif */,
 				5E02C5FC18ED6E900049AD84 /* 003.gif */,
@@ -1209,6 +1212,7 @@
 				5E02C74E18ED6E910049AD84 /* 090.gif in Resources */,
 				5E02C79D18ED6E910049AD84 /* 169.gif in Resources */,
 				5E02C79318ED6E910049AD84 /* 159.gif in Resources */,
+				5E853F5F19041BA400B8D3FB /* 000.gif in Resources */,
 				5E02C71518ED6E910049AD84 /* 033.gif in Resources */,
 				5E02C7AC18ED6E910049AD84 /* 184.gif in Resources */,
 				5E02C74218ED6E910049AD84 /* 078.gif in Resources */,

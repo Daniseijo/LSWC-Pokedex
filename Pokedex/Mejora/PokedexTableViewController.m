@@ -8,6 +8,7 @@
 
 #import "PokedexTableViewController.h"
 #import "PokemonViewController.h"
+#import "EditPokemonTableViewController.h"
 
 #import "Pokedex.h"
 #import "Pokemon.h"
@@ -90,6 +91,8 @@
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         // Delete the row from the data source
+        [self.pokedex.pokemons removeObjectAtIndex:indexPath.row];
+        
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
@@ -101,6 +104,9 @@
 // Override to support rearranging the table view.
 - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
 {
+    Pokemon *pokemonToMove = [self.pokedex.pokemons objectAtIndex:fromIndexPath.row];
+    [self.pokedex.pokemons removeObjectAtIndex:fromIndexPath.row];
+    [self.pokedex.pokemons insertObject:pokemonToMove atIndex:toIndexPath.row];
 }
 
 
@@ -113,6 +119,19 @@
 }
 */
 
+- (IBAction)pokemonWasChanged:(UIStoryboardSegue*)segue {
+    NSIndexPath * ip = [self.tableView indexPathForSelectedRow];
+    [self.tableView reloadRowsAtIndexPaths:@[ip] withRowAnimation:YES];
+}
+
+- (IBAction)pokemonWasCancel:(UIStoryboardSegue*)segue {
+    NSIndexPath *ip = [self.tableView indexPathForSelectedRow];
+    Race *race = [self.pokedex.pokemons objectAtIndex:ip.row];
+    if ([race.name isEqualToString:@""]) {
+        [self.pokedex.pokemons removeObjectAtIndex:ip.row];
+        [self.tableView deleteRowsAtIndexPaths:@[ip] withRowAnimation:UITableViewRowAnimationFade];
+    }
+}
 
 #pragma mark - Navigation
 
@@ -123,11 +142,28 @@
     if ([segue.identifier isEqualToString:@"Showing Pokemon"]) {
         
         // Get the new view controller using [segue destinationViewController].
-        NSIndexPath *ip = [self.tableView indexPathForCell:sender];
+        NSIndexPath *ip = [self.tableView indexPathForSelectedRow];
         PokemonViewController *pvc = segue.destinationViewController;
         
         // Pass the selected object to the new view controller.
         pvc.pokemon = self.pokedex.pokemons[ip.item];
+        pvc.pokedex = self.pokedex;
+    } else if ([segue.identifier isEqualToString:@"Adding Pokemon"]) {
+        EditPokemonTableViewController *eptvc = segue.destinationViewController;
+        
+        Pokemon *pokemon = [[Pokemon alloc] initWithName:@"" andRace:[[Race alloc] initWithCode:[NSNumber numberWithInt:0] name:@"" icon:@"000.gif"]];
+        [self.pokedex.pokemons insertObject:pokemon atIndex:0];
+        
+        NSIndexPath *ip = [NSIndexPath indexPathForRow:0 inSection:0];
+        
+        [self.tableView insertRowsAtIndexPaths:@[ip] withRowAnimation:UITableViewRowAnimationNone];
+        [self.tableView selectRowAtIndexPath:ip animated:NO scrollPosition:UITableViewScrollPositionTop];
+        
+        eptvc.pokemon = pokemon;
+        eptvc.pokedex = self.pokedex;
+        
+        eptvc.lengthTextField = pokemon.race.name.length;
+        [eptvc searchAutocompleteEntriesWithSubstring:[pokemon.race.name lowercaseString]];
     }
 }
 

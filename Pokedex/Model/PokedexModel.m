@@ -8,7 +8,6 @@
 
 #import "PokedexModel.h"
 
-#import "Race.h"
 #import "Type.h"
 #import "Generation.h"
 
@@ -70,5 +69,14 @@
         
     }
     return self;
+}
+
+- (Race*)searchRaceWithName:(NSString *)name {
+    for (Race* race in self.races) {
+        if ([race.name rangeOfString:name].location == 0) {
+            return race;
+        }
+    }
+    return nil;
 }
 @end
