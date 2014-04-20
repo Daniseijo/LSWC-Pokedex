@@ -62,6 +62,7 @@
     Race *race = self.racesSorted[item];
     
     cell.nameLabel.text = race.name;
+    
     cell.iconImageView.image = [UIImage imageNamed:race.icon];
     
     return cell;

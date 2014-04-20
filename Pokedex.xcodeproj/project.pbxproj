@@ -298,6 +298,12 @@
 		5E915B7B18EE2A4C0022D9D0 /* tipo_veneno.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E915B6A18EE2A4C0022D9D0 /* tipo_veneno.png */; };
 		5E915B7C18EE2A4C0022D9D0 /* tipo_volador.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E915B6B18EE2A4C0022D9D0 /* tipo_volador.png */; };
 		5E915B7E18EE2C2F0022D9D0 /* tipo_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E915B7D18EE2C2F0022D9D0 /* tipo_normal.png */; };
+		5E98DCBC190327A2004220E2 /* PokemonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E98DCBB190327A2004220E2 /* PokemonViewController.m */; };
+		5E98DCBF190335E2004220E2 /* EditPokemonTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E98DCBE190335E2004220E2 /* EditPokemonTableViewController.m */; };
+		5E98DCC519035487004220E2 /* AutocompleteTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E98DCC419035487004220E2 /* AutocompleteTableView.m */; };
+		5EF4491C1902F4D3004CA6B2 /* PokedexTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EF4491B1902F4D3004CA6B2 /* PokedexTableViewController.m */; };
+		5EF449201902F618004CA6B2 /* Pokedex.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EF4491F1902F618004CA6B2 /* Pokedex.m */; };
+		5EF449231902F653004CA6B2 /* Pokemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EF449221902F653004CA6B2 /* Pokemon.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -618,6 +624,18 @@
 		5E915B6A18EE2A4C0022D9D0 /* tipo_veneno.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tipo_veneno.png; sourceTree = "<group>"; };
 		5E915B6B18EE2A4C0022D9D0 /* tipo_volador.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tipo_volador.png; sourceTree = "<group>"; };
 		5E915B7D18EE2C2F0022D9D0 /* tipo_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tipo_normal.png; sourceTree = "<group>"; };
+		5E98DCBA190327A2004220E2 /* PokemonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PokemonViewController.h; path = Mejora/PokemonViewController.h; sourceTree = "<group>"; };
+		5E98DCBB190327A2004220E2 /* PokemonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PokemonViewController.m; path = Mejora/PokemonViewController.m; sourceTree = "<group>"; };
+		5E98DCBD190335E2004220E2 /* EditPokemonTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EditPokemonTableViewController.h; path = Mejora/EditPokemonTableViewController.h; sourceTree = "<group>"; };
+		5E98DCBE190335E2004220E2 /* EditPokemonTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EditPokemonTableViewController.m; path = Mejora/EditPokemonTableViewController.m; sourceTree = "<group>"; };
+		5E98DCC319035487004220E2 /* AutocompleteTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AutocompleteTableView.h; path = Mejora/AutocompleteTableView.h; sourceTree = "<group>"; };
+		5E98DCC419035487004220E2 /* AutocompleteTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AutocompleteTableView.m; path = Mejora/AutocompleteTableView.m; sourceTree = "<group>"; };
+		5EF4491A1902F4D3004CA6B2 /* PokedexTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PokedexTableViewController.h; path = Mejora/PokedexTableViewController.h; sourceTree = "<group>"; };
+		5EF4491B1902F4D3004CA6B2 /* PokedexTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PokedexTableViewController.m; path = Mejora/PokedexTableViewController.m; sourceTree = "<group>"; };
+		5EF4491E1902F618004CA6B2 /* Pokedex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Pokedex.h; path = Model/Pokedex.h; sourceTree = "<group>"; };
+		5EF4491F1902F618004CA6B2 /* Pokedex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Pokedex.m; path = Model/Pokedex.m; sourceTree = "<group>"; };
+		5EF449211902F653004CA6B2 /* Pokemon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Pokemon.h; path = Model/Pokemon.h; sourceTree = "<group>"; };
+		5EF449221902F653004CA6B2 /* Pokemon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Pokemon.m; path = Model/Pokemon.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -682,6 +700,7 @@
 				5E02C5D318ED69DC0049AD84 /* PokedexAppDelegate.h */,
 				5E02C5D418ED69DC0049AD84 /* PokedexAppDelegate.m */,
 				5E02C5D618ED69DC0049AD84 /* Main.storyboard */,
+				5EF4491D1902F4DB004CA6B2 /* Mejora */,
 				5E89A97F18EDC2B00055E143 /* GenerationsTableViewController.h */,
 				5E89A98018EDC2B00055E143 /* GenerationsTableViewController.m */,
 				5E89A97C18EDA9150055E143 /* WebViewController.h */,
@@ -992,6 +1011,10 @@
 				5E02C7FC18ED74A30049AD84 /* pokemons.plist */,
 				5E02C7F218ED704C0049AD84 /* PokedexModel.h */,
 				5E02C7F318ED704C0049AD84 /* PokedexModel.m */,
+				5EF4491E1902F618004CA6B2 /* Pokedex.h */,
+				5EF4491F1902F618004CA6B2 /* Pokedex.m */,
+				5EF449211902F653004CA6B2 /* Pokemon.h */,
+				5EF449221902F653004CA6B2 /* Pokemon.m */,
 				5E02C7F618ED709E0049AD84 /* Race.h */,
 				5E02C7F718ED709E0049AD84 /* Race.m */,
 				5E02C7F918ED70B70049AD84 /* Type.h */,
@@ -1025,6 +1048,21 @@
 				5E915B6B18EE2A4C0022D9D0 /* tipo_volador.png */,
 			);
 			path = tipo_icon;
+			sourceTree = "<group>";
+		};
+		5EF4491D1902F4DB004CA6B2 /* Mejora */ = {
+			isa = PBXGroup;
+			children = (
+				5E98DCC319035487004220E2 /* AutocompleteTableView.h */,
+				5E98DCC419035487004220E2 /* AutocompleteTableView.m */,
+				5E98DCBD190335E2004220E2 /* EditPokemonTableViewController.h */,
+				5E98DCBE190335E2004220E2 /* EditPokemonTableViewController.m */,
+				5E98DCBA190327A2004220E2 /* PokemonViewController.h */,
+				5E98DCBB190327A2004220E2 /* PokemonViewController.m */,
+				5EF4491A1902F4D3004CA6B2 /* PokedexTableViewController.h */,
+				5EF4491B1902F4D3004CA6B2 /* PokedexTableViewController.m */,
+			);
+			name = Mejora;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1400,15 +1438,21 @@
 			files = (
 				5E02C7F818ED709E0049AD84 /* Race.m in Sources */,
 				5E02C7FB18ED70B70049AD84 /* Type.m in Sources */,
+				5E98DCBF190335E2004220E2 /* EditPokemonTableViewController.m in Sources */,
 				5E02C5D118ED69DC0049AD84 /* main.m in Sources */,
 				5E02C5D518ED69DC0049AD84 /* PokedexAppDelegate.m in Sources */,
 				5E89A97E18EDA9150055E143 /* WebViewController.m in Sources */,
+				5E98DCC519035487004220E2 /* AutocompleteTableView.m in Sources */,
+				5EF449231902F653004CA6B2 /* Pokemon.m in Sources */,
 				5E89A97B18ED9B380055E143 /* PokemonCVCell.m in Sources */,
 				5E89A97818ED99E10055E143 /* RaceCollectionViewController.m in Sources */,
 				5E89A98418EDCEAF0055E143 /* Generation.m in Sources */,
 				5E02C7F418ED704C0049AD84 /* PokedexModel.m in Sources */,
 				5E89A98118EDC2B00055E143 /* GenerationsTableViewController.m in Sources */,
+				5EF4491C1902F4D3004CA6B2 /* PokedexTableViewController.m in Sources */,
+				5E98DCBC190327A2004220E2 /* PokemonViewController.m in Sources */,
 				5E02C80018ED7A2B0049AD84 /* TypesTableViewController.m in Sources */,
+				5EF449201902F618004CA6B2 /* Pokedex.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
