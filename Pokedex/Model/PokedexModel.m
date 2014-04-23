@@ -73,7 +73,7 @@
 
 - (Race*)searchRaceWithName:(NSString *)name {
     for (Race* race in self.races) {
-        if ([race.name rangeOfString:name].location == 0) {
+        if ([[race.name lowercaseString] rangeOfString:[name lowercaseString]] .location == 0) {
             return race;
         }
     }

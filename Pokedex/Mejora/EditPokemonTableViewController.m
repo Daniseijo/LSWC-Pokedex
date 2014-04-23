@@ -78,7 +78,7 @@
     [self.autocompleteRace removeAllObjects];
     for(Race *curRace in self.pokedexModel.races) {
         NSString *curString = [curRace.name lowercaseString];
-        NSRange substringRange = [curString rangeOfString:substring];
+        NSRange substringRange = [curString rangeOfString:[substring lowercaseString]];
         if (substringRange.location == 0) {
             [self.autocompleteRace addObject:curRace];
         }
@@ -116,7 +116,7 @@
     
     NSString *substring = [NSString stringWithString:textField.text];
     substring = [substring stringByReplacingCharactersInRange:range withString:string];
-    [self searchAutocompleteEntriesWithSubstring:[substring lowercaseString]];
+    [self searchAutocompleteEntriesWithSubstring:substring];
     return YES;
 }
 

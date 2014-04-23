@@ -20,11 +20,11 @@
         
         [_pokemons addObjectsFromArray:
          @[[[Pokemon alloc] initWithName:@"Pistacho"
-                                 andRace:pokedex.races[25]],
+                                 andRace:[pokedex searchRaceWithName:@"Pikachu"]],
            [[Pokemon alloc] initWithName:@"Miutu"
-                                 andRace:pokedex.races[150]],
+                                 andRace:[pokedex searchRaceWithName:@"Mewtwo"]],
            [[Pokemon alloc] initWithName:@"Dolly"
-                                 andRace:pokedex.races[179]]
+                                 andRace:[pokedex searchRaceWithName:@"Mareep"]]
            ]];
     }
     return _pokemons;
