@@ -7,7 +7,7 @@
 //
 
 #import "GenerationsTableViewController.h"
-#import "RaceCollectionViewController.h"
+#import "PokemonSearchViewController.h"
 #import "WebViewController.h"
 
 #import "PokedexModel.h"
@@ -132,10 +132,10 @@
         
         // Get the new view controller using [segue destinationViewController].
         NSIndexPath *ip = [self.tableView indexPathForCell:sender];
-        RaceCollectionViewController *rcvc = segue.destinationViewController;
+        PokemonSearchViewController *psvc = segue.destinationViewController;
         
         // Pass the selected object to the new view controller.
-        rcvc.gen = self.pokedexModel.generations[ip.item];
+        psvc.gen = self.pokedexModel.generations[ip.item];
     }
     
     if ([segue.identifier isEqualToString:@"Show Generation Web"]) {

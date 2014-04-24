@@ -11,6 +11,8 @@
 #import "PokedexModel.h"
 #import "AutocompleteTableView.h"
 
+#import "PokedexTableViewController.h"
+
 @interface EditPokemonTableViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *nameTextField;
 @property (strong, nonatomic) IBOutlet PokedexModel *pokedexModel;
@@ -49,6 +51,7 @@
     
     // Preparamos la tabla predictiva
     self.raceTextField.delegate = self;
+    self.nameTextField.delegate = self.autocompleteTableView;
     
     self.autocompleteTableView.eptvc = self;
     self.autocompleteTableView.pokedexModel = self.pokedexModel;
@@ -60,6 +63,7 @@
     self.nameTextField.text = self.pokemon.name;
     self.raceTextField.text = self.pokemon.race.name;
     
+    [self.saveButton setEnabled:NO];
     [self.nameTextField becomeFirstResponder];
     
 }
@@ -70,9 +74,8 @@
     // Dispose of any resources that can be recreated.
 }
 
-
 - (void)searchAutocompleteEntriesWithSubstring:(NSString *)substring {
-    
+    NSLog(@"Length = %@", substring);
     // Put anything that starts with this substring into the autocompleteUrls array
     // The items in this array is what will show up in the table view
     [self.autocompleteRace removeAllObjects];
@@ -117,6 +120,28 @@
     NSString *substring = [NSString stringWithString:textField.text];
     substring = [substring stringByReplacingCharactersInRange:range withString:string];
     [self searchAutocompleteEntriesWithSubstring:substring];
+    if ([self.raceTextField.text length] != 0
+        && [self.nameTextField.text length] != 0
+        && [self.autocompleteRace count] != 0) {
+        [self.saveButton setEnabled:YES];
+    } else {
+        [self.saveButton setEnabled:NO];
+    }
+    return YES;
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    Race *finalRace = [self.pokedexModel searchRaceWithName:self.raceTextField.text];
+    if ([self.raceTextField.text length] != 0
+        && [self.nameTextField.text length] != 0
+        && finalRace) {
+        [self.autocompleteRace removeAllObjects];
+        [self.autocompleteRace addObject:finalRace];
+        [self.autocompleteTableView reloadData];
+        [self.saveButton setEnabled:YES];
+    } else {
+        [self.saveButton setEnabled:NO];
+    }
     return YES;
 }
 

@@ -11,7 +11,7 @@
 
 #import "EditPokemonTableViewController.h"
 
-@interface AutocompleteTableView : UITableView <UITableViewDataSource, UITableViewDelegate>
+@interface AutocompleteTableView : UITableView <UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate>
 @property (nonatomic, weak) EditPokemonTableViewController *eptvc;
 @property (nonatomic, weak) PokedexModel *pokedexModel;
 @end

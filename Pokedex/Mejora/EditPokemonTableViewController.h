@@ -17,6 +17,7 @@
 @property (nonatomic, weak) Pokedex *pokedex;
 
 @property (weak, nonatomic) IBOutlet UITextField *raceTextField;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *saveButton;
 
 - (void)searchAutocompleteEntriesWithSubstring:(NSString *)substring;
 

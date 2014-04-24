@@ -30,8 +30,8 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="m8T-pD-s5T" kind="push" identifier="Show Races" id="SPa-tD-V0B"/>
                                     <segue destination="7Hp-2X-Nvf" kind="push" identifier="Show Type Web" trigger="accessoryAction" id="hSM-Qb-0dV"/>
+                                    <segue destination="Fgw-KC-0po" kind="push" identifier="Show Races" id="mIL-02-vX2"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -77,8 +77,8 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="m8T-pD-s5T" kind="push" identifier="Show Generation Races" id="tfa-Hb-De6"/>
                                     <segue destination="7Hp-2X-Nvf" kind="push" identifier="Show Generation Web" trigger="accessoryAction" id="fa7-m1-aA3"/>
+                                    <segue destination="Fgw-KC-0po" kind="push" identifier="Show Generation Races" id="WVM-qM-Clf"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -118,7 +118,7 @@
             <objects>
                 <collectionViewController autoresizesArchivedViewToFullSize="NO" id="m8T-pD-s5T" customClass="RaceCollectionViewController" sceneMemberID="viewController">
                     <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="6Hk-id-MQ0">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="372"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="U8o-yV-Rpw">
@@ -129,7 +129,7 @@
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PokemonCell" id="dpl-xZ-bko" customClass="PokemonCVCell">
-                                <rect key="frame" x="0.0" y="64" width="93" height="90"/>
+                                <rect key="frame" x="0.0" y="0.0" width="93" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="93" height="90"/>
@@ -165,7 +165,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="51g-ZX-tm4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="678" y="-307"/>
+            <point key="canvasLocation" x="1068" y="-285"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="Eqk-Xb-eOo">
@@ -206,7 +206,54 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cHa-sd-Y1e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1234" y="-940"/>
+            <point key="canvasLocation" x="1510" y="-940"/>
+        </scene>
+        <!--Pokemon Search View Controller-->
+        <scene sceneID="A30-35-7n2">
+            <objects>
+                <viewController id="Fgw-KC-0po" customClass="PokemonSearchViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7Lk-F9-x15"/>
+                        <viewControllerLayoutGuide type="bottom" id="I5H-hl-dS2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="K9c-bE-qdJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="GFc-dN-x2j">
+                                <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <containerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zog-Ok-fWb">
+                                <rect key="frame" x="0.0" y="108" width="320" height="372"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="m8T-pD-s5T" kind="embed" identifier="Show Collection" id="Rn9-bW-7Ud"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Zog-Ok-fWb" firstAttribute="top" secondItem="GFc-dN-x2j" secondAttribute="bottom" id="H2S-ED-F0D"/>
+                            <constraint firstAttribute="trailing" secondItem="Zog-Ok-fWb" secondAttribute="trailing" id="MQy-Rj-ZsJ"/>
+                            <constraint firstAttribute="bottom" secondItem="Zog-Ok-fWb" secondAttribute="bottom" id="PJ3-HQ-NuA"/>
+                            <constraint firstItem="GFc-dN-x2j" firstAttribute="leading" secondItem="K9c-bE-qdJ" secondAttribute="leading" id="eCc-cb-G9M"/>
+                            <constraint firstItem="Zog-Ok-fWb" firstAttribute="leading" secondItem="K9c-bE-qdJ" secondAttribute="leading" id="or1-jr-MAf"/>
+                            <constraint firstItem="GFc-dN-x2j" firstAttribute="top" secondItem="7Lk-F9-x15" secondAttribute="bottom" id="xk4-xz-PhB"/>
+                            <constraint firstItem="Zog-Ok-fWb" firstAttribute="top" secondItem="GFc-dN-x2j" secondAttribute="bottom" id="yA2-cu-KQE"/>
+                            <constraint firstAttribute="trailing" secondItem="GFc-dN-x2j" secondAttribute="trailing" id="zHD-9N-MD9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="vFH-oW-kvF"/>
+                    <connections>
+                        <outlet property="searchBar" destination="GFc-dN-x2j" id="4US-3I-NxS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3OV-sl-t7H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="613" y="-273"/>
         </scene>
         <!--Navigation Controller - Tipo-->
         <scene sceneID="I6U-sy-gex">
@@ -306,7 +353,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Pokédex" id="BWv-MO-6KD">
-                        <barButtonItem key="leftBarButtonItem" systemItem="trash" id="4Np-8q-ge5"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="4Np-8q-ge5"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="769-Mf-4Z9">
                             <connections>
                                 <segue destination="gea-wl-SqB" kind="push" identifier="Adding Pokemon" id="Mxo-Ri-jud"/>
@@ -364,7 +411,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Introduce un mote" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="6Iz-og-zC3">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Introduce un mote" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Iz-og-zC3">
                                                     <rect key="frame" x="20" y="7" width="280" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -393,7 +440,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Introduce una raza" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="O3x-PF-shB">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Introduce una raza" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O3x-PF-shB">
                                                     <rect key="frame" x="20" y="7" width="280" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -436,6 +483,7 @@
                         <outlet property="nameTextField" destination="6Iz-og-zC3" id="1dJ-99-GkP"/>
                         <outlet property="pokedexModel" destination="Orx-VH-Mgw" id="pGp-jv-LbG"/>
                         <outlet property="raceTextField" destination="O3x-PF-shB" id="Bt5-fW-Jat"/>
+                        <outlet property="saveButton" destination="QUU-fk-89q" id="JI1-Hg-0sM"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8fq-eF-nGY" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -528,8 +576,8 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Mxo-Ri-jud"/>
-        <segue reference="tfa-Hb-De6"/>
         <segue reference="fa7-m1-aA3"/>
+        <segue reference="ccM-65-UCU"/>
+        <segue reference="mIL-02-vX2"/>
     </inferredMetricsTieBreakers>
 </document>

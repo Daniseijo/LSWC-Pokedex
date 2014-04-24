@@ -282,6 +282,7 @@
 		5E89A97E18EDA9150055E143 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E89A97D18EDA9150055E143 /* WebViewController.m */; };
 		5E89A98118EDC2B00055E143 /* GenerationsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E89A98018EDC2B00055E143 /* GenerationsTableViewController.m */; };
 		5E89A98418EDCEAF0055E143 /* Generation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E89A98318EDCEAF0055E143 /* Generation.m */; };
+		5E8CD6F41909B26F009C82D1 /* PokemonSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8CD6F31909B26F009C82D1 /* PokemonSearchViewController.m */; };
 		5E915B6C18EE2A4C0022D9D0 /* tipo_acero.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E915B5B18EE2A4C0022D9D0 /* tipo_acero.png */; };
 		5E915B6D18EE2A4C0022D9D0 /* tipo_agua.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E915B5C18EE2A4C0022D9D0 /* tipo_agua.png */; };
 		5E915B6E18EE2A4C0022D9D0 /* tipo_bicho.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E915B5D18EE2A4C0022D9D0 /* tipo_bicho.png */; };
@@ -606,6 +607,8 @@
 		5E89A98018EDC2B00055E143 /* GenerationsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenerationsTableViewController.m; sourceTree = "<group>"; };
 		5E89A98218EDCEAF0055E143 /* Generation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Generation.h; path = Model/Generation.h; sourceTree = "<group>"; };
 		5E89A98318EDCEAF0055E143 /* Generation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Generation.m; path = Model/Generation.m; sourceTree = "<group>"; };
+		5E8CD6F21909B26F009C82D1 /* PokemonSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PokemonSearchViewController.h; path = Mejora/PokemonSearchViewController.h; sourceTree = "<group>"; };
+		5E8CD6F31909B26F009C82D1 /* PokemonSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PokemonSearchViewController.m; path = Mejora/PokemonSearchViewController.m; sourceTree = "<group>"; };
 		5E915B5518EE1C0F0022D9D0 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5E915B5618EE1C0F0022D9D0 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5E915B5B18EE2A4C0022D9D0 /* tipo_acero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tipo_acero.png; sourceTree = "<group>"; };
@@ -1058,6 +1061,8 @@
 			children = (
 				5E98DCC319035487004220E2 /* AutocompleteTableView.h */,
 				5E98DCC419035487004220E2 /* AutocompleteTableView.m */,
+				5E8CD6F21909B26F009C82D1 /* PokemonSearchViewController.h */,
+				5E8CD6F31909B26F009C82D1 /* PokemonSearchViewController.m */,
 				5E98DCBD190335E2004220E2 /* EditPokemonTableViewController.h */,
 				5E98DCBE190335E2004220E2 /* EditPokemonTableViewController.m */,
 				5E98DCBA190327A2004220E2 /* PokemonViewController.h */,
@@ -1455,6 +1460,7 @@
 				5E89A98118EDC2B00055E143 /* GenerationsTableViewController.m in Sources */,
 				5EF4491C1902F4D3004CA6B2 /* PokedexTableViewController.m in Sources */,
 				5E98DCBC190327A2004220E2 /* PokemonViewController.m in Sources */,
+				5E8CD6F41909B26F009C82D1 /* PokemonSearchViewController.m in Sources */,
 				5E02C80018ED7A2B0049AD84 /* TypesTableViewController.m in Sources */,
 				5EF449201902F618004CA6B2 /* Pokedex.m in Sources */,
 			);

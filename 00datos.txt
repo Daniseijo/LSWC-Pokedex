@@ -1,0 +1,6 @@
+LSWC - Práctica 5 - Pokedex Personal
+GRUPO 102:
+Daniel Sánchez Seijo
+José Santos Sánchez Sánchez
+
+Aunque no hemos conseguido implementar el Search a tiempo, si que realizamos una búsqueda a la hora de añadir un nuevo pokemon como mejora. Esta búsqueda ayuda a elegir la raza del pokemon.

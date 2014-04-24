@@ -7,7 +7,7 @@
 //
 
 #import "TypesTableViewController.h"
-#import "RaceCollectionViewController.h"
+#import "PokemonSearchViewController.h"
 #import "WebViewController.h"
 
 #import "PokedexModel.h"
@@ -132,10 +132,10 @@
         
         // Get the new view controller using [segue destinationViewController].
         NSIndexPath *ip = [self.tableView indexPathForCell:sender];
-        RaceCollectionViewController *rcvc = segue.destinationViewController;
+        PokemonSearchViewController *psvc = segue.destinationViewController;
         
         // Pass the selected object to the new view controller.
-        rcvc.type = self.pokedexModel.types[ip.item];
+        psvc.type = self.pokedexModel.types[ip.item];
     }
     
     if ([segue.identifier isEqualToString:@"Show Type Web"]) {
